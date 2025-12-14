@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-black to-emerald-900 text-white min-h-screen;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .netflix-gradient {
+    @apply bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent;
+  }
+}
