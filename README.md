@@ -131,15 +131,7 @@ CSV keywords → Native SQL, no NoSQL complexity
 
 ### system diagram
 
-graph TD
-    A[NewsAPI<br/>Top Headlines] -->|30 articles| B[News Service<br/>NLTK Keywords]
-    B -->|title+desc → keywords| C[PostgreSQL<br/>article_id=URL]
-    D[User Interests<br/>['AI','tech']] --> E[FastAPI<br/>TF-IDF Similarity]
-    C --> E
-    E -->|Top 5 + scores| F[React + Tailwind<br/>Green Netflix UI]
-    
-    style A fill:#10B981
-    style F fill:#10B981
+![Architecture Diagram](./architecture.png)
 
 
 ## 🗄 Database Setup
